@@ -235,7 +235,7 @@
             font-size: 0.7rem;
         }
 
-        /* ========== SEM validation ========== */
+        /* ========== SEM validation (원본 비율 유지) ========== */
         .sem-validation-area { margin-top: 40px; padding-top: 40px; border-top: 1px dashed #ddd; }
         .sem-title { margin: 0 0 15px; color: var(--dark-gray); font-size: 1.5rem; }
         .sem-desc { margin: 0 0 30px; color: #666; font-size: 1.05rem; }
@@ -268,6 +268,128 @@
         }
         .validation-card h4 { margin: 10px 0 5px; color: var(--dark-gray); font-size: 1.05rem; }
         .validation-card p { margin: 0; color: #777; font-size: 0.85rem; }
+
+        /* ========== NEXT ITEM ========== */
+        .tag-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 26px;
+            background: var(--dark-blue);
+            color: var(--white);
+            font-weight: 700;
+            border-radius: 50px;
+        }
+        .tag-pill em { color: #F5A623; font-style: italic; font-weight: 800; }
+
+        .next-title {
+            margin: 22px 0 0;
+            color: var(--dark-blue);
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+        .next-title span { color: var(--primary-color); }
+
+        .platform-line {
+            margin: 28px 0 0;
+            padding: 16px 24px;
+            color: var(--dark-blue);
+            font-weight: 700;
+            line-height: 1.7;
+            word-break: keep-all;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+        .platform-line .x { margin: 0 6px; color: var(--primary-color); }
+
+        .next-visual {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .next-visual svg { width: 100%; height: auto; }
+
+        .status-card { padding: 18px 24px; border: 1px solid var(--border-color); border-radius: 12px; }
+        .status-card small { display: block; color: #5a6578; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; }
+        .status-card strong { color: var(--dark-blue); font-size: 1.35rem; }
+
+        .milestone-card { margin-top: 16px; padding: 26px 28px; background: var(--dark-blue); color: var(--white); border-radius: 14px; }
+        .milestone-card small { color: #F5A623; font-weight: 800; letter-spacing: 0.04em; }
+        .milestone-card strong { display: block; margin: 6px 0 4px; font-size: 1.8rem; }
+        .milestone-card span { font-size: 0.95rem; opacity: 0.85; }
+
+        .next-sub { margin: 0 0 30px; color: #4a5568; font-size: 1.3rem; font-weight: 700; }
+
+        .step-list { margin: 0; padding: 0; list-style: none; }
+        .step-list li {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 22px;
+            color: var(--dark-blue);
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.5;
+            word-break: keep-all;
+        }
+        .step-no {
+            display: flex;
+            flex: 0 0 52px;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            background: var(--dark-blue);
+            color: var(--white);
+            font-weight: 800;
+            border-radius: 50%;
+        }
+
+        .concept-wrap { flex: 1; max-width: 480px; }
+        .concept-card { padding: 22px; background: var(--white); border: 1px solid var(--border-color); border-radius: 14px; }
+        .concept-card h4 { margin: 0 0 14px; color: var(--dark-gray); font-size: 0.95rem; text-align: center; }
+        .concept-body { display: flex; align-items: center; gap: 14px; }
+        .concept-body svg { flex: 1 1 55%; min-width: 0; height: auto; }
+        .legend { flex: 1 1 45%; margin: 0; padding: 0; font-size: 0.9rem; font-weight: 600; list-style: none; }
+        .legend li { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+        .dot { flex-shrink: 0; width: 12px; height: 12px; border-radius: 50%; }
+
+        .benefit {
+            display: flex;
+            align-items: baseline;
+            gap: 18px;
+            margin-top: 30px;
+            padding: 20px 28px;
+            background: var(--dark-blue);
+            color: var(--white);
+            line-height: 1.6;
+            border-radius: 12px;
+        }
+        .benefit b { color: #F5A623; white-space: nowrap; }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            margin: 30px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        .process li {
+            padding: 16px 10px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            line-height: 1.4;
+            text-align: center;
+            word-break: keep-all;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+        .process li span { display: block; margin-bottom: 6px; color: var(--primary-color); font-weight: 800; }
+
+        .note { margin: 16px 0 0; color: #777; font-size: 0.85rem; line-height: 1.6; }
 
         /* ========== Contact ========== */
         .contact-card {
@@ -315,6 +437,14 @@
             .content-row.reverse { flex-direction: column; }
 
             .product-img { width: 100%; max-width: 320px; height: auto; aspect-ratio: 1 / 1; }
+
+            .next-title { font-size: 2rem; }
+            .next-visual { grid-template-columns: 1fr; }
+            .step-list li { font-size: 1.02rem; }
+            .concept-wrap { max-width: none; width: 100%; }
+            .concept-body { flex-direction: column; }
+            .benefit { flex-direction: column; gap: 6px; }
+
             .contact-card { padding: 30px 20px; }
             .contact-row { flex-direction: column; align-items: flex-start; gap: 4px; }
         }
@@ -329,6 +459,7 @@
     <nav>
         <a href="#home"    data-page="home"    class="active">HOME</a>
         <a href="#product" data-page="product">PRODUCTS &amp; VALIDATION</a>
+        <a href="#next"    data-page="next">NEXT ITEM</a>
         <a href="#contact" data-page="contact">CONTACT</a>
     </nav>
 </header>
@@ -363,12 +494,12 @@
             </div>
             <div class="content-image">
                 <div class="img-group">
-                    <img src="초경합금 나이프2.png" alt="초경합금 나이프 5mm" class="product-img" loading="lazy">
-                    <p class="img-caption">(5mm)</p>
+                    <img src="초경합금 나이프 5mm.png" alt="초경합금 나이프 5mm" class="product-img" loading="lazy">
+                    <p class="img-caption">5mm</p>
                 </div>
                 <div class="img-group">
-                    <img src="초경합금 나이프.png" alt="초경합금 나이프 10mm" class="product-img" loading="lazy">
-                    <p class="img-caption">(10mm)</p>
+                    <img src="초경합금 나이프 10mm.png" alt="초경합금 나이프 10mm" class="product-img" loading="lazy">
+                    <p class="img-caption">10mm</p>
                 </div>
             </div>
         </div>
@@ -431,6 +562,117 @@
     </section>
 </main>
 
+<!-- NEXT ITEM -->
+<main id="next" class="page">
+    <h2 class="section-title">NEXT ITEM</h2>
+
+    <!-- 1. 차세대 사업 소개 -->
+    <section class="content-card">
+        <span class="tag-pill"><em>NEXT ITEM</em> 다인테크 차세대 사업 !!</span>
+        <h3 class="next-title">3D 구조분석,<br>빠르고 <span>경제적으로</span></h3>
+        <p class="platform-line">
+            메조스케일급 | 연속 정밀 섹셔닝 <span class="x">×</span> 다파장 광학검출 <span class="x">×</span> AI 분석 통합 플랫폼
+        </p>
+
+        <div class="next-visual">
+            <svg viewBox="0 0 520 260" role="img" aria-label="연속 절편을 쌓아 3D 구조로 재구성하는 개념도">
+                <!-- 연속 절편 -->
+                <polygon points="30,200 150,200 128,238 8,238" fill="#E3ECF8" stroke="#8FB0DA" stroke-width="1"/>
+                <polygon points="30,185 150,185 128,223 8,223" fill="#D3E1F4" stroke="#8FB0DA" stroke-width="1"/>
+                <polygon points="30,170 150,170 128,208 8,208" fill="#C2D6EF" stroke="#8FB0DA" stroke-width="1"/>
+                <polygon points="30,155 150,155 128,193 8,193" fill="#B0C9E8" stroke="#8FB0DA" stroke-width="1"/>
+                <polygon points="38,60 158,60 136,172 16,172" fill="#9FBFE3" stroke="#6F93C4" stroke-width="1"/>
+                <!-- 화살표 -->
+                <polygon points="182,120 222,120 222,104 254,134 222,164 222,148 182,148" fill="#F0AD4E"/>
+                <!-- 3D 큐브 -->
+                <polygon points="296,92 368,24 448,24 376,92" fill="#B0C9E8" stroke="#6F93C4" stroke-width="1"/>
+                <polygon points="296,92 376,92 376,222 296,222" fill="#9FBFE3" stroke="#6F93C4" stroke-width="1"/>
+                <polygon points="376,92 448,24 448,154 376,222" fill="#7F98B8" stroke="#6F93C4" stroke-width="1"/>
+                <polyline points="312,118 332,148 322,178" fill="none" stroke="#B8651B" stroke-width="2"/>
+            </svg>
+
+            <div>
+                <div class="status-card">
+                    <small>STATUS</small>
+                    <strong>Prototype 제작 중</strong>
+                </div>
+                <div class="milestone-card">
+                    <small>NEXT MILESTONE</small>
+                    <strong>2027년 4월 PoC</strong>
+                    <span>LFP 배터리 대상</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 염색 없이 '볼 곳'을 먼저 찾습니다 -->
+    <section class="content-card">
+        <h3 class="next-title" style="margin-top:0;">염색 없이, <span>‘볼 곳’</span>을 먼저 찾습니다</h3>
+        <p class="next-sub" style="margin-top:18px;">필요한 곳만 SEM으로…</p>
+
+        <div class="content-row">
+            <div class="content-text">
+                <ol class="step-list">
+                    <li><span class="step-no">01</span>자체 단결정 다이아몬드 나이프로 저손상 연속 절편</li>
+                    <li><span class="step-no">02</span>RGB·UV 다파장 검출로 염색 없이 ROI(크랙·기공) 선별</li>
+                    <li><span class="step-no">03</span>AI 2D 분석·3D 재구성·CLEM으로 분석 예산·대기시간 절감</li>
+                </ol>
+            </div>
+
+            <div class="concept-wrap">
+                <div class="concept-card">
+                    <h4>염색 없이 5가지 물질 구분</h4>
+                    <div class="concept-body">
+                        <svg viewBox="0 0 265 243" role="img" aria-label="염색 없이 활물질, 바인더, 기공, 크랙, 레진을 구분한 개념도">
+                            <rect width="265" height="243" fill="#D0E3F5"/>
+                            <g fill="#7C879A" stroke="#2E8B57" stroke-width="2.5">
+                                <circle cx="49"  cy="70"  r="34"/>
+                                <circle cx="112" cy="32"  r="29"/>
+                                <circle cx="185" cy="47"  r="21"/>
+                                <circle cx="118" cy="92"  r="30"/>
+                                <circle cx="202" cy="105" r="34"/>
+                                <circle cx="82"  cy="130" r="20"/>
+                                <circle cx="54"  cy="155" r="20"/>
+                                <circle cx="121" cy="172" r="28"/>
+                                <circle cx="187" cy="174" r="33"/>
+                            </g>
+                            <g fill="#0F1F3D">
+                                <circle cx="82"  cy="46"  r="4.5"/>
+                                <circle cx="150" cy="112" r="4.5"/>
+                            </g>
+                            <g stroke="#C0392B" stroke-width="2" stroke-linecap="round">
+                                <line x1="103" y1="42"  x2="86"  y2="110"/>
+                                <line x1="200" y1="88"  x2="174" y2="192"/>
+                                <line x1="74"  y1="150" x2="66"  y2="193"/>
+                            </g>
+                        </svg>
+                        <ul class="legend">
+                            <li><span class="dot" style="background:#2E8B57;"></span>유기 바인더</li>
+                            <li><span class="dot" style="background:#7C879A;"></span>활물질</li>
+                            <li><span class="dot" style="background:#0F1F3D;"></span>기공(빈 공간)</li>
+                            <li><span class="dot" style="background:#C0392B;"></span>미세 크랙</li>
+                            <li><span class="dot" style="background:#8CB8E4;"></span>포매 레진</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="benefit"><b>기대 효과</b> 고가 SEM 분석 영역을 사전 선별하고, 불필요한 데이터 유입을 줄여 3D 분석 신뢰도를 높입니다.</p>
+
+        <ol class="process">
+            <li><span>1</span>연속 시료 절편</li>
+            <li><span>2</span>다파장 광학<br>이미징</li>
+            <li><span>3</span>보정·언믹싱</li>
+            <li><span>4</span>대면적 스티칭</li>
+            <li><span>5</span>AI 불량 검출·분할</li>
+            <li><span>6</span>3D 재구성</li>
+            <li><span>7</span>SEM/TEM 연계<br>(CLEM)</li>
+        </ol>
+        <p class="note">※ 이해를 돕는 개념도입니다. 빛의 반응 차이(스톡스 변위)로 염색 없이 구분하고, 단면을 쌓아 3D 결함 지도를 만듭니다.</p>
+    </section>
+</main>
+
 <!-- CONTACT -->
 <main id="contact" class="page">
     <h2 class="section-title">CONTACT US</h2>
@@ -455,7 +697,7 @@
             </p>
             <hr>
             <p class="contact-address">
-                <strong>본사 오시는 길</strong>
+                <strong>본사 연구소 오시는 길</strong>
                 대전광역시 유성구 테크노1로 75<br>한밭대학교 대덕산학융합캠퍼스 창업보육센터 213호
             </p>
         </div>
@@ -472,7 +714,7 @@
 </footer>
 
 <script>
-    const PAGES = ['home', 'product', 'contact'];
+    const PAGES = ['home', 'product', 'next', 'contact'];
 
     function showPage(pageId, updateHash = true) {
         if (!PAGES.includes(pageId)) pageId = 'home';
